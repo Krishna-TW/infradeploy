@@ -13,7 +13,6 @@ resource "aws_instance" "web" {
 
    provisioner "remote-exec" {
     inline = [
-      "chmod 400 /home/ec2-user/Krish",
       "sudo amazon-linux-extras install java-openjdk11 -y",
       "sudo yum install java-1.8.0-openjdk -y",
     ]
